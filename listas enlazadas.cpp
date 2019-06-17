@@ -13,8 +13,7 @@ class nodo
 	void setsiguiente(nodo<T> *sig){siguiente=sig;}
 	void setdata(T data){this->data=data;}
 	nodo<T>* getsiguiente(){return siguiente;}
-	T getdata(){return data;}
-	~nodo();	
+	T getdata(){return data;}	
 };
 
 template <class T>
