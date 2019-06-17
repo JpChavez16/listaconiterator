@@ -184,7 +184,7 @@ int main()
 	listaEnlazada_1.buscar(10);
 	
 	IteratorList<int> a;
-	for(a=listaEnlazada_1.begin(); a!=listaEnlazada_1.end(); a.next())
+	for(a=listaEnlazada_1.begin(); a!=listaEnlazada_1.end(); ++a)
 		cout<<a.get()<<' ';
 	cout<<endl;
 	
