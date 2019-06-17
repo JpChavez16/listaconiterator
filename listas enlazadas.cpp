@@ -135,7 +135,16 @@ class ListaEnlazada{
 		    while(aux->getsiguiente() != NULL)
 		        aux = aux->getsiguiente();
 		    return aux->getsiguiente();
-		}		
+		}
+	        ~ListaEnlazada(){
+			for(int i=0;i<size;i++)
+			{
+				nodo<T>* eliminado=head;
+				head=head->getsiguiente();
+				delete eliminado;
+			}
+			cout<<"Memoria liberada"<<endl;
+		}
 };
 
 template <class T>
